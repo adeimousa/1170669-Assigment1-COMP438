@@ -18,24 +18,24 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.405" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="363dp"
-        android:layout_height="52dp"
+        android:layout_width="359dp"
+        android:layout_height="46dp"
         android:gravity="center_vertical"
         android:text="This is your account information:"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/nameView"
@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/emailView"
@@ -71,31 +71,19 @@
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailView"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
-        android:id="@+id/dobView"
+        android:id="@+id/humanView"
         android:layout_width="258dp"
         android:layout_height="39dp"
-        android:hint="Date Of Birth"
+        android:hint="Human"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneView"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <TextView
-        android:id="@+id/passwordView"
-        android:layout_width="258dp"
-        android:layout_height="39dp"
-        android:hint="Password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dobView"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <TextView
         android:id="@+id/countryView"
@@ -106,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordView"
+        app:layout_constraintTop_toBottomOf="@+id/humanView"
         app:layout_constraintVertical_bias="0.103" />
 
     <ImageView
@@ -118,7 +106,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_drawing_1"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/ic_drawing_1" />
+
+    <RatingBar
+        android:id="@+id/ratingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryView"
+        app:layout_constraintVertical_bias="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
     android:paddingLeft="40dp"
-    android:paddingTop="40dp"
+    android:paddingTop="15dp"
     android:paddingRight="40dp"
     tools:context=".MainActivity">
 
@@ -56,7 +56,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="10dp" />
 
     <EditText
         android:id="@+id/email"
@@ -67,8 +67,8 @@
         android:inputType="textEmailAddress" />
 
     <Space
-        android:layout_width="329dp"
-        android:layout_height="30dp" />
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <EditText
         android:id="@+id/phone"
@@ -79,20 +79,8 @@
         android:inputType="phone" />
 
     <Space
-        android:layout_width="329dp"
-        android:layout_height="30dp" />
-
-    <EditText
-        android:id="@+id/dob"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Date Of Birth"
-        android:inputType="date" />
-
-    <Space
-        android:layout_width="329dp"
-        android:layout_height="30dp" />
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <EditText
         android:id="@+id/password"
@@ -103,13 +91,36 @@
         android:inputType="textPassword" />
 
     <Space
-        android:layout_width="329dp"
-        android:layout_height="30dp" />
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="329dp"
         android:layout_height="51dp" />
+
+    <Switch
+        android:id="@+id/humanView"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:checked="true"
+        android:text="Human?" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="Please Rate My App" />
+
+    <RatingBar
+        android:id="@+id/ratingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
 
     <Button
         android:id="@+id/button"
